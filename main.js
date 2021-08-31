@@ -67,7 +67,10 @@ document.getElementById('pariOdispariGame').addEventListener('click',
         };
 
         // 1) chiedo all'utente i dati
-        var uParDis = prompt('Scegli pari o dispari');
+        var uParDis;
+        while (uParDis !== "pari" || uParDis !== "dispari"){
+            uParDis = prompt('Scegli pari o dispari');
+        };
         var uNum = prompt('scegli un numero da 1 a 5');
 
         // 2) richiamo la fuzione inviandogli i dati dell'utente
